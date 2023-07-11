@@ -76,7 +76,7 @@ function getSizes() {
   })
 }
 
-function getSize(id) {
+function getSize(id: number) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       const size = sizes.find((size) => size.id === id)
@@ -95,7 +95,7 @@ function getProducts() {
   })
 }
 
-function getProduct(id) {
+function getProduct(id: number) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       const product = products.find((product) => product.id === id)
@@ -108,7 +108,7 @@ function getProduct(id) {
   })
 }
 
-function getProductColor(productID, colorID) {
+function getProductColor(productID: number, colorID: number) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       const product = products.find((product) => product.id === productID)
